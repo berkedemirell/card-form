@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width : 1125px) {
+    .asd {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .cards {
+        margin-right: 5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .name {
+        font-size: 0.7rem;
+        top: 7rem;
+    }
+    .number {
+        top: 4rem;
+        font-size: 1.4rem;
+    }
+
+    .exp {
+        top: 7rem;
+        font-size: 0.7rem;
+    }
+
+    .cvc {
+        bottom: 22px;
+        right: 20px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .name {
+        top: 5rem;
+        left: 1rem;
+    }
+    .number {
+        top: 2.7rem;
+        font-size: 1rem ;
+        left: 1rem;
+    }
+    .exp {
+        top: 4.9rem;
+        left: 9rem;
+    }
+    .cvc {
+        bottom: 0;
+        left: 1rem;
+        color: rgb(82, 3, 3);
+    }
+}
