@@ -40,11 +40,11 @@ export const ContextProvider = ({ children }) => {
   ];
 
   const [info, setInfo] = useState({
-    holderName: "",
-    cardNumber: "",
-    month: "",
-    year: "",
-    cvc: "",
+    holderName: "berke demirel",
+    cardNumber: "0000000000000000",
+    month: "00",
+    year: "00",
+    cvc: "132",
   });
 
   const checker = (str) => {
