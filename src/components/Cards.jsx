@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { InputContext } from "../context/InputContext";
+import img1 from '/src/images/bg-card-back.png'
+import img2 from '/src/images/bg-card-front.png'
 
 export const Cards = () => {
   const { info } = useContext(InputContext);
@@ -10,7 +12,7 @@ export const Cards = () => {
   return (
     <div className="z-10 flex flex-col items-center justify-center cards">
       <div className="relative ml-24 mt-24">
-        <img className="" src="/src/images/bg-card-front.png" />
+        <img className="" src={img2} />
         <span className="absolute text-4xl text-slate-200 left-6 font-mono top-32 font-bold number">
           {newNumber}
         </span>
@@ -22,7 +24,7 @@ export const Cards = () => {
         </span>
       </div>
       <div className="ml-64 mt-6 relative">
-        <img className="" src="/src/images/bg-card-back.png" />
+        <img className="" src={img1} />
         <span className="absolute text-xl text-slate-950 font-bold bottom-28 right-14 cvc">
           {info.cvc}
         </span>
